@@ -105,6 +105,7 @@ nav ul li ul li a {
 
 .navbar-dropdown {
     position: absolute;
+    right: 0;
     display: none;
     z-index: 1;
     /* background: #fff; */
@@ -156,10 +157,60 @@ nav ul li ul li a {
     background-color: transparent;
     border: none;
 }
-
+.addHover:hover{
+    background-color: #2c2d2d;
+}
+@media screen and (max-width: 1000px){
+    .brand{
+        left: 3rem;
+    }
+    nav{
+        right: 3rem;
+    }
+}
+@media screen and (min-width: 1000px){
+    .brand{
+        left: 3rem;
+    }
+    nav{
+        right: 3rem;
+    }
+}
+@media only screen and (max-width: 800px){
+    .ham{
+        margin-top: 0.3rem;
+        padding: 1.4rem 1rem;
+        background: linear-gradient(45deg, #0d141c, #0d141c);
+    }
+    .addHover{
+        background: linear-gradient(45deg, #0d141c, #0d141c);
+    }
+    .newArr{
+        padding: 10px 1px;
+    }
+    nav ul li a,
+    nav ul li a:visited{
+    background: linear-gradient(45deg, #0d141c, #0d141c);
+    }
+    .navbar-dropdown li a {
+        background: transparent;
+    }
+}
 
 
 @media only screen and (max-width: 800px) {
+    .nav-list{
+        position: absolute;
+        top: 5rem;
+        /* right: 0px; */
+        left: 3rem;
+        width: 100vw;
+        /* background: red; */
+        background: linear-gradient(45deg, #0d141c, #0d141c);
+    }
+    .newArrCenter{
+        display: block;
+    }
     .nav-mobile {
         display: block;
     }
@@ -201,6 +252,7 @@ nav ul li ul li a {
         position: absolute;
         left: 18px;
         top: 15px;
+        margin-top: 0.8rem;
         cursor: pointer;
         padding: 10px 35px 16px 0px;
     }

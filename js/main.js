@@ -1,4 +1,4 @@
-
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 function disableSizeSlider(){
     document.querySelector("#arrSize").disabled = true;
