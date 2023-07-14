@@ -296,3 +296,12 @@ nav ul li ul li a {
         transform: rotate(-45deg);
     }
 }
+
+@media screen and (min-width:800px) {
+    .nav-list {
+        display: block !important;
+    }
+    .newArr{
+        margin-top: 1.3rem;
+    }
+}
